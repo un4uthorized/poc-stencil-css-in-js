@@ -1,0 +1,50 @@
+{
+  "name": "emotion-poc",
+  "version": "0.0.1",
+  "description": "Stencil Component Starter",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/emotion-poc/emotion-poc.esm.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ionic-team/stencil-component-starter.git"
+  },
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate"
+  },
+  "dependencies": {
+    "@emotion/css": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@stencil/core": "^3.0.0",
+    "@stitches/core": "^1.2.8",
+    "@stitches/react": "^1.2.8",
+    "react": "^18.2.0",
+    "stencil-css-in-js": "1.0.0-beta.0",
+    "styled-components": "^5.3.10",
+    "styles": "link:@material-ui/core/styles",
+    "twin.macro": "^3.3.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.11",
+    "@types/styled-components": "^5.1.26",
+    "i": "^0.3.7",
+    "jest": "^27.5.1",
+    "jest-cli": "^27.5.1",
+    "puppeteer": "^19.5.2"
+  },
+  "license": "MIT"
+}
